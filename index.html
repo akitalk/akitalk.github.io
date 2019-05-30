@@ -341,7 +341,7 @@ What are you waiting for? </p>
             <p class="mail"> <i class="fa fa-phone" aria-hidden="true"></i> &nbsp; +1-626-395-7693 </p>
           </div>
           <div class="col-sm-8">
-            <form class="frm" method="post" action="contactus.php">
+            <form class="frm" id="feedform" action="" method="POST">
               <div class="row">
                 <div class="col-md-12">
                   <div id="success"></div>
@@ -349,21 +349,21 @@ What are you waiting for? </p>
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="Name">Name *</label>
-                    <input type="text" class="form-control" name="name" id="Name" placeholder="Enter name">
+                    <input type="text" required class="form-control" name="name" id="Name" placeholder="Enter name">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="Email">Email *</label>
-                    <input type="email" class="form-control" Name="email" id="Email" placeholder="Enter email">
+                    <input type="email" required class="form-control" Name="email" id="Email" placeholder="Enter email">
                   </div>
                 </div>
                 <div class="col-md-12">
                   <div class="form-group">
                     <label for="Message">Messages *</label>
-                    <textarea name="message" id="Message" class="form-control" rows="3" placeholder="Enter messages"></textarea>
+                    <textarea id="message" name="message" required id="Message" class="form-control" rows="3" placeholder="Enter messages"></textarea>
                   </div>
-                  <input type="submit" id="submit" name="submit" value="Send Message" class="btn btn-lg btn-block btn-action" />
+                  <input type="submit" id="submitFeedBack" name="submit" value="Send Message" class="btn btn-lg btn-block btn-action" />
                 </div>
               </div>
             </form>
@@ -387,6 +387,8 @@ What are you waiting for? </p>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scrollreveal.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://talk.atoken.org/html/feedback/js?src=www"></script>
+    <!--<script src="feedback_www.js"></script>..-->
     
   </body>
   
